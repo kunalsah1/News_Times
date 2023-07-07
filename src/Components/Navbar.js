@@ -27,8 +27,6 @@ const Navbar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-
-
             <li>
               <Link to="/business">Business</Link>
             </li>
@@ -51,6 +49,20 @@ const Navbar = () => {
             <li>
               <Link to="technology">Technology</Link>
             </li>
+          </ul>
+        </div>
+        <div className="btn-group custom-us dropstart" style={{ position: "absolute", right: "50px" }}>
+          <button className="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ padding: "1px" }}>
+            US News
+          </button>
+          <ul className="dropdown-menu " >
+            <li><Link className="dropdown-item custom-li" to="/us-general">General</Link></li>
+            <li><Link className="dropdown-item custom-li" to="/us-business">Business</Link></li>
+            <li><Link className="dropdown-item custom-li" to="/us-Entertainment">Entertainment</Link></li>
+            <li><Link className="dropdown-item custom-li" to="/us-Health">Health</Link></li>
+            <li><Link className="dropdown-item custom-li" to="/us-Science">Science</Link></li>
+            <li><Link className="dropdown-item custom-li" to="/us-Sports">Sports</Link></li>
+            <li><Link className="dropdown-item custom-li" to="/us-Technology">Technology</Link></li>
           </ul>
         </div>
       </div>
